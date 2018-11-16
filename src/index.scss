@@ -1,0 +1,15 @@
+*, 
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: 1px solid transparent;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
