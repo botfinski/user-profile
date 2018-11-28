@@ -29,7 +29,7 @@ class CommentsList extends Component {
 								return(
 									<li
 										className='Comment'
-										key={comment+index}>
+										key={'comment'+index}>
 										<img 
 											className='Comment-Avatar'
 											alt={comment.author.name + ' avatar'}
