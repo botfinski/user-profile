@@ -26,15 +26,17 @@ class CommentsList extends Component {
 					<ul>
 						{
 							this.props.comments.map((comment, index) => {
+								const imgName = 'data/images/' + comment.author.name.replace(/\s/g, '').toLowerCase() + comment.author.id;
+
 								return(
 									<li
 										className='Comment'
 										key={'comment'+index}>
 										<img 
 											className='Comment-Avatar'
-											alt={comment.author.name + ' avatar'}
-											srcSet={'data/images/' + comment.author.name.replace(/\s/g, '').toLowerCase() + comment.author.id + '.jpg 1x, data/images/' + comment.author.name.replace(/\s/g, '').toLowerCase() + comment.author.id + '@2x.jpg 2x'}
-											src={'data/images/' + comment.author.name.replace(/\s/g, '').toLowerCase() + comment.author.id + '.jpg'} />
+											alt={comment.author.name + ' avatar'}											
+											srcSet={imgName + '.jpg 1x,' + imgName + '@2x.jpg 2x'}
+											src={imgName} />
 										
 										<div className='Comment-Content'>
 											<p className='Comment-Author'>

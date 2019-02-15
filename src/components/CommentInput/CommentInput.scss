@@ -1,3 +1,5 @@
+$wildBlue: #8298B9;
+
 .Comment-Input-Container {
 
 	border-radius: 0 0 5px 5px;
@@ -12,32 +14,32 @@
 		border-bottom: 2px solid #DBE0E8;
 		font-family: 'Montserrat', sans-serif;
 		width: 100%;
-		color: #8298B9;
+		color: $wildBlue;
 	}
 
 	.Comment-Input:active,
 	.Comment-Input:focus {
-		color: darken(#8298B9, 20%);
+		color: darken($wildBlue, 20%);
 		border-bottom: 2px solid darken(#DBE0E8, 20%);
 	}
 	
 	.Comment-Input::placeholder {
-		color: #8298B9;
+		color: $wildBlue;
 		font-family: 'Montserrat', sans-serif;
 	}
 	
 	.Comment-Input::-ms-input-placeholder {
-		color: #8298B9;
+		color: $wildBlue;
 	}
 
 	.Comment-Input:active::placeholder,
 	.Comment-Input:focus::placeholder {
-		color: darken(#8298B9, 20%);
+		color: darken($wildBlue, 20%);
 	}
 
 	.Comment-Input:active::-ms-input-placeholder,
 	.Comment-Input:focus::-ms-input-placeholder {
-		color: darken(#8298B9, 20%);
+		color: darken($wildBlue, 20%);
 	}
 }
 

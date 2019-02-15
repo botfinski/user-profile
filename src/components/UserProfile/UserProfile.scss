@@ -1,7 +1,5 @@
-$navyBlue: #002C71;
-$orange: #FFA640;
-$lightBlue: #8298B9;
-$break-point-mobile: 768px;
+@import '../variables.scss';
+
 
 .User-Profile {
 	padding: 35px 15px;
@@ -20,6 +18,7 @@ $break-point-mobile: 768px;
 		box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
 		border-radius: 5px;
 		padding: 40px 0 15px;
+		margin: 20px 0 0 0;
 
 		@media screen and (min-width: $break-point-mobile) {
 			width: 466px;
@@ -93,6 +92,7 @@ $break-point-mobile: 768px;
 					margin: -15px 0 0 0;
 				}
 
+				.Like-Button.Liked svg path,
 				.Like-Button:active svg path,
 				.Like-Button:focus svg path {
 					fill:#ff0050;
@@ -172,6 +172,7 @@ $break-point-mobile: 768px;
 				cursor: pointer;
 			}
 
+			.Follow-Button.Following,
 			.Follow-Button:active,
 			.Follow-Button:focus {
 				background: darken( $orange, 20% )
