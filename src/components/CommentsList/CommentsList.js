@@ -36,7 +36,7 @@ class CommentsList extends Component {
 											className='Comment-Avatar'
 											alt={comment.author.name + ' avatar'}											
 											srcSet={imgName + '.jpg 1x,' + imgName + '@2x.jpg 2x'}
-											src={imgName} />
+											src={imgName + '.jpg'} />
 										
 										<div className='Comment-Content'>
 											<p className='Comment-Author'>
