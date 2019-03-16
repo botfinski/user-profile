@@ -1,45 +1,43 @@
-$wildBlue: #8298B9;
+$wildBlue: #8298b9;
 
 .Comment-Input-Container {
+  border-radius: 0 0 5px 5px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 4px 0 rgba(172, 172, 172, 0.5);
 
-	border-radius: 0 0 5px 5px;
-	padding: 20px;
-    background: white;
-    box-shadow: 0 0 4px 0 rgba(172, 172, 172, 0.5);
+  .Comment-Input {
+    font-size: 18px;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #dbe0e8;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    color: $wildBlue;
+  }
 
-	.Comment-Input {
-		font-size: 18px;
-		padding: 10px 0;
-		border: none;
-		border-bottom: 2px solid #DBE0E8;
-		font-family: 'Montserrat', sans-serif;
-		width: 100%;
-		color: $wildBlue;
-	}
+  .Comment-Input:active,
+  .Comment-Input:focus {
+    color: darken($wildBlue, 20%);
+    border-bottom: 2px solid darken(#dbe0e8, 20%);
+  }
 
-	.Comment-Input:active,
-	.Comment-Input:focus {
-		color: darken($wildBlue, 20%);
-		border-bottom: 2px solid darken(#DBE0E8, 20%);
-	}
-	
-	.Comment-Input::placeholder {
-		color: $wildBlue;
-		font-family: 'Montserrat', sans-serif;
-	}
-	
-	.Comment-Input::-ms-input-placeholder {
-		color: $wildBlue;
-	}
+  .Comment-Input::placeholder {
+    color: $wildBlue;
+    font-family: "Montserrat", sans-serif;
+  }
 
-	.Comment-Input:active::placeholder,
-	.Comment-Input:focus::placeholder {
-		color: darken($wildBlue, 20%);
-	}
+  .Comment-Input::-ms-input-placeholder {
+    color: $wildBlue;
+  }
 
-	.Comment-Input:active::-ms-input-placeholder,
-	.Comment-Input:focus::-ms-input-placeholder {
-		color: darken($wildBlue, 20%);
-	}
+  .Comment-Input:active::placeholder,
+  .Comment-Input:focus::placeholder {
+    color: darken($wildBlue, 20%);
+  }
+
+  .Comment-Input:active::-ms-input-placeholder,
+  .Comment-Input:focus::-ms-input-placeholder {
+    color: darken($wildBlue, 20%);
+  }
 }
-
